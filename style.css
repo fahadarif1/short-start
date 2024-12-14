@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+ }
+ /* Navbar Start */
+ .navbar{
+     padding: 13px;
+     /* border-bottom: 1px solid lightgray; */
+ }
+ .navbar-nav{
+     display: flex;
+     gap: 20px;
+ }
+ .navbar-brand{
+     font-weight: bold;
+     font-size: 25px;
+     color: rgb(59, 15, 102);
+ }
+ .nav-link{
+     font-weight: bold;
+     font-size: 19px;
+     color: rgb(59, 15, 102) !important;
+     transition: all 0.5s;
+ }
+ .nav-link:hover{
+     color: #E10489 !important;
+     transition: all 0.5s;
+ }
+ 
+ /* select category styling start */
+ .categoryUl{
+     display: flex;
+     align-self: center;
+     gap: 10px;
+     list-style: none;
+     margin-bottom: 0;
+ }
+ #selectCategory{
+    margin-top: 4%;
+    width: 160px;
+    padding: 9px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ #selectCategory option{
+    background-color: #E10489;
+    color: white;
+    font-weight: bold;
+ }
+ #selectCategory:focus{
+     box-shadow: 0px 0px 3px #E10489;
+     border-color: #E10489;
+     outline: none;
+     transition: all 0.5s;
+ }
+ #selectCategor:hover{
+     box-shadow: 0px 0px 4px #E10489;
+     transition: all 0.5s;
+ }
+ /* select category styling end */
+ /* logout button styling start */
+ .loginBtn{
+     margin-top: 4%;
+     background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+     width: 130px;
+     padding: 8px;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     font-size: 17px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: all 0.5s;
+ }
+ .loginBtn:hover{
+     box-shadow: 0px 0px 4px #E10489;
+     transition: all 0.5s;
+ }
+ .loginLoutBtn{
+    margin-top: 4%;
+    background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+    width: 130px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.loginLoutBtn:hover{
+    box-shadow: 0px 0px 4px #E10489;
+    transition: all 0.5s;
+}
+ /* logout button styling end */
+ /* Navbar End */
+ 
+ /* intro Section Styling Start */
+ .introDiv{
+     background-color: #efefef;
+     width: 100%;
+     height: 65vh;
+ }
+ .introTextDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    height: 60vh;
+ }
+ .introTextDiv h1{
+     color: rgb(59, 15, 102);
+     text-align: center;
+     font-weight: bolder;
+ }
+ .createpostBtn{
+     margin-top: 4%;
+     background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+     width: 130px;
+     padding: 8px;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     font-size: 17px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: all 0.5s;
+     margin-top: 0%;
+ }
+ .createpostBtn:hover{
+     box-shadow: 0px 0px 4px #E10489;
+     transition: all 0.5s;
+ }
+ /* intro Section Styling End */
+ /* Posts Section Styling Start */
+ .postHeading{
+     color: rgb(59, 15, 102);
+     font-weight: bolder;
+     margin-top: 5%;
+     margin-left: 4%;
+ }
+ /* All Posts Parent Div Start */
+ .postsParent{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+ }
+ /* All Posts Parent Div End */
+ /* parent of post details */
+ .postDiv{
+     width: 420px;
+     height: 92vh;
+     padding: 10px;
+     margin-top: 4%;
+ }
+ .imgDiv{
+     text-align: center;
+ }
+ .imgDiv img{
+     width: 93%;
+     height: 50vh;
+     border-radius: 20px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ /* post title div start */
+ .titleDiv{
+     width: 90%;
+     height: 10.8vh;
+     margin: 0 auto;
+     margin-top: 7%;
+     padding-left: 3%;
+     overflow: scroll;
+ }
+ .titleDiv::-webkit-scrollbar{
+     display: none;
+ }
+ .titleDiv h3{
+     text-align: start;
+     font-weight: bolder;
+     font-size: 27px;
+     color: rgb(59, 15, 102);
+ }
+ /* post title div end */
+ /* post discription div start */
+ .discDiv{
+     width: 90%;
+     height: 12vh;
+     margin: 0 auto;
+     margin-top: 4%;
+     padding-left: 3%;
+     font-weight: 600;
+     overflow: scroll;
+ }
+ .discDiv::-webkit-scrollbar{
+     display: none;
+ }
+ /* post discription div end */
+ /* post author div start */
+ .authorDiv{
+     width: 90%;
+     margin: 0 auto;
+     margin-top: 3%;
+     padding-left: 3%;
+ }
+ .authorDiv h3{
+     text-align: start;
+     font-weight: bolder;
+     font-size: 15px;
+     color: #E10489;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ /* post author div end */
+ /* Posts Section Styling End */
+
+ /* footer Start */
+.footerDiv{
+    background-color: rgb(26, 4, 48);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 13px;
+    height: 35vh;
+    margin-top: 5%;
+}
+.footerDiv h2{
+    font-weight: 800;
+}
+.abUs{
+    width: 350px;
+    font-weight: 600;
+}
+.conUs h2{
+    margin-bottom: 8.6%;
+}
+.conUs a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.conUs a:hover{
+   color: #d7208e;
+   transition: all 0.5s;
+}
+.copyrDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-weight: 600;
+}
+ /* footer End */
+ 
+ /* Add page styling post start */
+ .addpostBody{
+     font-family: 'Arial', sans-serif;
+     background-color: rgb(243, 243, 243);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+ .addpostDiv{
+     background-color: white;
+     border: 1px solid lightgray;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
+     border-radius: 10px;
+     padding: 10px;
+     width: 50%;
+     height: 90vh;
+ }
+ .postHeading{
+     text-align: center;
+     /* margin-bottom: 10%; */
+     text-align: center;
+     color: rgb(59, 15, 102);
+ }
+ .postInpDiv{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 15px;
+     margin-top: 8%;
+ }
+ .postInpDiv input {
+     width: 90%;
+     padding: 15px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     font-size: 20px;
+     box-sizing: border-box;
+     transition: all 0.3s ease-in;
+ }
+ .postInpDiv input:focus {
+     border-color: #E10489;
+     outline: none;
+     box-shadow: 0px 0px 3px #E10489;
+ }
+ .postInpDiv input:focus::placeholder{
+     color: #E10489;
+ }
+ /* select Category 2nd button start */
+ #selectCategory2{
+    margin-top: 4%;
+    width: 90%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ #selectCategory2 option{
+    background-color: #E10489;
+    color: white;
+    font-weight: bold;
+ }
+ #selectCategory2:focus{
+     box-shadow: 0px 0px 3px #E10489;
+     border-color: #E10489;
+     outline: none;
+     transition: all 0.5s;
+ }
+ #selectCategor2:hover{
+     box-shadow: 0px 0px 4px #E10489;
+     transition: all 0.5s;
+ }
+ /* select Category 2nd button end */
+ /* choose file start */
+ #chooseFile{
+     margin-top: 1%;
+     background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+     width: 90%;
+     padding: 13px;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     font-size: 20px;
+     cursor: pointer;
+     transition: all 0.5s;
+ }
+ #chooseFile:hover{
+     background: linear-gradient(90deg, #E10489 0%,#fd6265 70%);
+     transition: all 0.5s
+ }
+ /* choose file end */
+ /* post now button start */
+ .postnowBtn{
+     margin-top: 1%;
+     background: linear-gradient(100deg, #fd6265 0%, #E10489 70%);
+     width: 90%;
+     padding: 13px;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     font-size: 20px;
+     cursor: pointer;
+     transition: all 0.5s;
+ }
+ .postnowBtn:hover {
+     background: linear-gradient(90deg, #E10489 0%,#fd6265 70%);
+     transition: all 0.5s;
+ }
+
+ * .wrapper{
+    margin: 10px auto; 
+    padding:0 10% ;
+    padding-bottom: 10px; 
+    text-transform: capitalize ;
+}
+ 
+ /* * .conatiner{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+ }
+ .box{
+    padding:20px ;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0,0, 0); */
+ /* }
+ .box img{
+    height: 150px;
+ }
+ .box h3{
+       color: blueviolet;
+       padding: 10px;
+       font-size: 20px;
+ }
+.box p{
+    color: blue;
+    font-size: 20px;
+    line-height: 1.6;
+/* } */ 
+
+
+
+
+
+ /* post now button end */
+ /* Add page styling post end */
+
+ /* Responsiveness Start */
+ @media(max-width:800px){
+    .introTextDiv h1{
+        font-size: 20px;
+    }
+    .createpostBtn{
+        width: 130px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    .loginSignBtn{
+        width: 130px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    #selectCategory{
+        padding: 7px;
+        font-size: 15px;
+     }
+    .rocket{
+        width: 30px;
+    }
+    .earth{
+        width: 50px;
+    }
+    .footerDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 75vh;
+    }
+    .abUs h2{
+        text-align: center;
+    }
+ }
+ @media(max-width:500px){
+    .addpostDiv{
+        width: 90%;
+    }
+ }
+ @media(max-width:430px){
+    .introTextDiv h1{
+        font-size: 16px;
+    }
+ }
+ /* Responsiveness End */

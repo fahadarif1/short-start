@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website Dashboard</title>
+    <link rel="icon" href="images/blogicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="websiteFiles/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fahad<span style="color: #E10489;">Blog</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex g-5 ms-auto mb-lg-0">
+              <li class="nav-item align-self-center">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link" href="#AboutUs">About Us</a>
+              </li>
+              <li class="nav-item align-self-center">
+                <a class="nav-link" href="#AboutUs">Contact Us</a>
+              </li>
+            </ul>
+            <ul class="categoryUl">
+              <li><select id="selectCategory">
+                <option disabled selected>Blog Category</option>
+                <option value="All Blogs">All Blogs</option>
+                <option value="Education">Education</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Business">Bussiness</option>
+                <option value="Food Blogs">Food Blogs</option>
+              </select></li>
+            </ul>
+            <ul class="navbar-nav ms-4">
+                <li class="nav-item">
+               <a href="LoginFiles/loginSignup.html"><button class="loginLoutBtn" id="loginLoutBtn">Login</button></a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="introDiv">
+        <div class="introTextDiv" data-aos="zoom-in">
+            <h1>Welcome to fahad Blog, a fast <img class="rocket" width="45px" src="images/rocket.gif" alt="image"> and <br> user  friendly Blogging Website!</h1>
+            <button class="createpostBtn" id="createPostBtn">Create Post</button>
+          </div>
+    </div>
+   
+  </div>
+  <h1 class="postHeading">Latest Posts <img class="earth" style="margin-top: -0.5%;" width="65px" src="images/earthgif" alt="image"></h1>
+   <div class="postsParent" id="showPosts"></div>
+
+
+ 
+
+
+    <div class="footerDiv" id="AboutUs">
+      <div class="abUs">
+          <h2>About Us</h2>
+          <p>Hi my name name is Fahad Arif i am Front End Developer. I made this blogging website with user-friendly interface.</p>
+      </div>
+      <div class="conUs">
+          <h2>Contact Us</h2>
+          <a href="https://github.com/fahadarif1" target="_blank"><p>Github Profile</p></a>
+             <a href="https://www.linkedin.com/in/muhammad-hassan-raza-aab5402b7/" target="_blank"><p>LinkedIn Profile</p></a>
+      </div>
+      <div class="copyrDiv">
+          <h2>CopyRight</h2>
+          <p>CopyRight &#169; 2024 <br> By Fahad Arif</p>
+      </div>
+  </div>
+
+
+
+
+ <script src="app.js"></script>
+
+
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="websiteFiles/app.js" type="module"></script>
+<script src="LoginFiles/loginSignup.js" type="module"></script> 
+</body>
+</html>
